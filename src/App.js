@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap'
-import './App.css';
+import './main.css';
 import Animate from './components/Animate.js'
 import Home from './components/Home.js'
 import Navigation from './components/Navbar'
+import ScrollAlert from './components/ScrollAlert';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <div className="centered" id="scrollPoint">
             <Home />
           </div>
+          <ScrollAlert />
           <div className="cover"></div>
           <div className="cover"></div>
         </div>
