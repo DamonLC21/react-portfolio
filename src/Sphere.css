@@ -1,0 +1,22 @@
+.tagBall {
+    width: 800px;
+    height: 800px;
+    position: relative;
+   margin-top: 50px;
+}
+
+.tag {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: rgb(136, 245, 3);
+    text-decoration: none;
+    font-size: 5px;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+}
+
+.tag:hover {
+    color: white;
+}
