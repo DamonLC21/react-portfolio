@@ -13,9 +13,9 @@ class App extends Component {
         <Navigation />
         <div className="contained">
         <div className="cover"></div>
-          <Container className="centered" id="scrollPoint">
+          <div className="centered" id="scrollPoint">
             <Home />
-          </Container>
+          </div>
           <div className="cover"></div>
           <div className="cover"></div>
         </div>

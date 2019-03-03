@@ -23,13 +23,16 @@ export default class Navigation extends Component {
 
         window.onscroll = function() {myFunction(), changeX()};
         var openNav = document.getElementById("openNav");
+        var topNav = document.getElementById("topNav");
         var sticky = openNav.offsetTop;
 
         function myFunction() {
             if (window.pageYOffset >= sticky) {
                 openNav.classList.add("sticky")
+                topNav.classList.add("sticky")
             } else {
-                openNav.classList.remove("sticky");
+                openNav.classList.remove("sticky")
+                topNav.classList.remove("sticky")
             }
         }
         function changeX() {
@@ -60,12 +63,13 @@ export default class Navigation extends Component {
                <span id="openNav" onClick={this.openCloseNav}>&#9776;</span>
             </div>
             <div id="topNav">
-            <nav>
-                <a href="#"><i class="fas fa-home"></i></a>
-                <a href="#"><i class="far fa-user"></i></a>
-                <a href="#"><i class="fas fa-chart-pie"></i></a>
-                <a href="#" ><i class="far fa-eye"></i></a>
-                <a href="#" ><i class="far fa-comment"></i></a>
+                <a class="logo" rel="index" href="#"> <img src={require("../Logo@3x.png")}/></a>
+                <nav>
+                    <a href="#"><i class="fas fa-home"></i></a>
+                    <a href="#"><i class="far fa-user"></i></a>
+                    <a href="#"><i class="fas fa-chart-pie"></i></a>
+                    <a href="#" ><i class="far fa-eye"></i></a>
+                    <a href="#" ><i class="far fa-comment"></i></a>
                 </nav>
             </div>
         </div>

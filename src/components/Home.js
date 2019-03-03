@@ -8,7 +8,7 @@ class Home extends Component{
 
     render(){
         return(
-           
+            <div>
                 <Media className="centered-media">
                     <img
                     width={100}  
@@ -19,6 +19,8 @@ class Home extends Component{
                         <h1>Hi, <br/>I'm Damon,<br/>designer and developer.</h1>
                     </Media.Body>
                 </Media>
+                <div class="scroll-info">Scroll to continue</div>
+            </div>
         
         )
     }
