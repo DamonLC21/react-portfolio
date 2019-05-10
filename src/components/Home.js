@@ -2,20 +2,22 @@ import React, {Component} from 'react'
 import { Container, Row, Col, Media } from 'react-bootstrap'
 import { TweenLite, TweenMax, Elastic, Linear } from "gsap";
 import TextPlugin from "gsap/TextPlugin"
-import '../main.css'
+import '../main.scss'
 import '../Sphere.css'
 
 class Home extends Component{
 
     componentDidMount(){
         let intro = document.getElementById("intro")
+        let under = document.getElementById("under-construction")
         TweenLite.to(intro, 3, {text:"Hi, <br/>I'm Damon,<br/>designer and developer.",  ease:Linear.easeNone})
+        TweenLite.to(under, 2, {text:"🚧 This Page Is Currently Under Construction 🚧", delay: 3,  ease:Linear.easeNone})
     }
 
 
     render(){
         return(
-            <div>
+            <React.Fragment>
                 <Media className="centered-media">
                     <img
                     width={100}  
@@ -26,7 +28,8 @@ class Home extends Component{
                         <h1 id="intro"></h1>
                     </Media.Body>
                 </Media>
-            </div>
+                <h2 id="under-construction"></h2>
+            </React.Fragment>
         
         )
     }

@@ -18,8 +18,6 @@ class App extends Component {
             <Home />
           </div>
           <ScrollAlert />
-          <div className="cover"></div>
-          <div className="cover"></div>
         </div>
       </div>
     );

@@ -48,7 +48,7 @@ export default class Navigation extends Component {
     render() {
         
     return (
-        <div>
+        <React.Fragment>
             <div id="mySidenav" class="sidenav">
             <a class="logo" rel="index" href="#"> <img src={require("../Logo@3x.png")}/></a>
                 <nav>
@@ -72,7 +72,7 @@ export default class Navigation extends Component {
                     <a href="#" ><i class="far fa-comment"></i></a>
                 </nav>
             </div>
-        </div>
+        </React.Fragment>
     )
   }
   
